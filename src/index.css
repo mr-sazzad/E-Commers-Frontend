@@ -25,7 +25,7 @@
 }
 .nav-left-side {
   font-size: 1.5rem;
-  padding: 3px 10px;
+  padding: 3px 0px;
 }
 .nav-left-side-item {
   text-decoration: none;
@@ -113,4 +113,42 @@
     display: block;
   }
 }
-/* navbar design part */
+/* overview design part */
+.overview-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+.welcome {
+  font-size: 0.9rem;
+  color: #6366f1;
+  line-height: 1.2rem;
+}
+.store {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+.main-para {
+  font-size: 1rem;
+}
+.shop-button {
+  border: none;
+  background-color: #6366f1;
+  padding: 7px 10px;
+  margin-top: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.banner-img {
+  width: 100%;
+}
+@media only screen and (max-width: 801px) {
+  .overview-section {
+    display: flex;
+    flex-direction: column;
+  }
+}

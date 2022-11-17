@@ -1,7 +1,31 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import iphone from "../../src/assets/iphone.jpg";
 
 const Overview = () => {
-  return <div></div>;
+  return (
+    <div>
+      <div className="overview-section">
+        <div className="para-section">
+          <p className="welcome">welcome to</p>
+          <h1 className="store">MELA STORE</h1>
+          <p className="main-para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+            magni et reiciendis? Ducimus molestiae deserunt tempora illum
+            impedit ab, voluptatibus deleniti.
+          </p>
+          <NavLink to="/products">
+            <button type="button" className="shop-button">
+              SHOP NOW
+            </button>
+          </NavLink>
+        </div>
+        <div className="image-section">
+          <img src={iphone} className="banner-img" />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Overview;
