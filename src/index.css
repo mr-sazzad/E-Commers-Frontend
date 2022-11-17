@@ -1,16 +1,63 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+/* navbar design part */
+.wrapper {
+  background-color: white;
+  height: 70px;
+  border-bottom: 1px solid lightgray;
+}
+.nav-wrapper {
+  height: 70px;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.nav-left-side {
+  font-size: 1.5rem;
+  padding: 3px 10px;
+}
+.nav-left-side-item {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-right-side ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-right-side ul li {
+  list-style: none;
+}
+.item {
+  padding: 5px 15px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+.login {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  padding: 5px 15px;
+  /* background-color: lightseagreen; */
+  background-color: #6366f1;
+}
+.cart {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+
+/* navbar design part */
