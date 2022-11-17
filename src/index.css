@@ -115,12 +115,34 @@
 }
 /* overview design part */
 .overview-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
-  margin-top: 20px;
+  margin-top: 50px; /* aaa */
+  gap: 90px;
+}
+.para-section {
+  flex: 1;
+}
+.image-section {
+  flex: 1;
+  position: relative;
+  margin-right: 2rem;
+}
+/* .overview-img {
+  position: relative; 
+} */
+.back-banner {
+  position: absolute;
+  top: -9%;
+  right: -40px;
+  height: 80%;
+  width: 65%;
+  background-color: #9799fb;
+  z-index: -1;
 }
 .welcome {
   font-size: 0.9rem;
@@ -143,12 +165,34 @@
   color: #fff;
   cursor: pointer;
 }
-.banner-img {
+.overview-img {
   width: 100%;
+}
+@media only screen and (max-width: 1050px) {
+  .back-banner {
+    right: -7.5%;
+  }
 }
 @media only screen and (max-width: 801px) {
   .overview-section {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+  }
+  .image-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overview-img {
+    width: 70%;
+  }
+  .back-banner {
+    top: -12%;
+    right: 10%;
+    height: 80%;
+    width: 45%;
   }
 }

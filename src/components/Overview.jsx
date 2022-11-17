@@ -21,7 +21,8 @@ const Overview = () => {
           </NavLink>
         </div>
         <div className="image-section">
-          <img src={iphone} className="banner-img" />
+          <img src={iphone} className="overview-img" />
+          <div className="back-banner"></div>
         </div>
       </div>
     </div>
