@@ -31,13 +31,20 @@
   text-decoration: none;
   color: black;
 }
+.nav-right-side-computer {
+  display: none;
+}
+.nav-right-side-mobile .menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
-.nav-right-side ul {
+.nav-right-side-computer ul {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
-.nav-right-side ul li {
+.nav-right-side-computer ul li {
   list-style: none;
 }
 .item {
@@ -59,5 +66,51 @@
   color: black;
   font-size: 1.3rem;
 }
+/* mobile navbar design */
+.nav-mobile {
+  height: 100vh;
+  width: 200px;
+  background-color: lightgrey;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.3s linear;
+}
+.cross-icon-div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.cross-icon {
+  padding: 5px;
+  font-size: 2rem;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.nav-mobile ul {
+  margin-top: 20px;
+}
+.nav-mobile ul li {
+  list-style: none;
+  padding: 5px 10px;
+  margin: 20px 10px;
+}
 
+.mobile-item {
+  color: #000;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 801px) {
+  .nav-right-side-mobile .menu-icon {
+    display: none;
+  }
+  .nav-right-side-computer {
+    display: block;
+  }
+}
 /* navbar design part */
