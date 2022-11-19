@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import iphone from "../../src/assets/iphone.jpg";
+import Featured from "./Featured";
 
 const Overview = () => {
   return (
@@ -25,6 +26,7 @@ const Overview = () => {
           <div className="back-banner"></div>
         </div>
       </div>
+      <Featured />
     </div>
   );
 };

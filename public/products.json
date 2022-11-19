@@ -1,0 +1,158 @@
+[
+  {
+    "_id": "product-of-mela-watch-001",
+    "name": "I Watch series 8",
+    "company": "apple",
+    "colors": ["#3A3B40", "#E2D8CF", "#FA9878"],
+    "price": "399",
+    "category": "Watch",
+    "description": " 45mm or 41mm case size 50m water resistantfootnote⁵ Swimprooffootnote⁵ Certified IP6X dust resistant Always-On Retina display Up to 1000 nits brightness Blood Oxygen app ECG app High and low heart rate notifications Irregular rhythm notificationfootnote⁸ Cardio fitness notifications Temperature sensing ",
+    "featured": "true",
+    "shipping": "true",
+    "stock": 5,
+    "reviews": 30,
+    "star": 2.8,
+    "image": [
+      {
+        "id": "i-watch-1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://unsplash.com/photos/4RmyqApaLjw",
+        "size": 1080,
+        "filename": "watch.png",
+        "type": "image/png"
+      },
+      {
+        "id": "i-watch-1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://unsplash.com/photos/bFzhdm9zZp0",
+        "size": 1080,
+        "filename": "watch.png",
+        "type": "image/png"
+      },
+      {
+        "id": "i-watch-1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://unsplash.com/photos/LRfh0_ldDA4",
+        "size": 1080,
+        "filename": "watch.png",
+        "type": "image/png"
+      },
+      {
+        "id": "i-watch-1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://unsplash.com/photos/IhuGwJIMgws",
+        "size": 1080,
+        "filename": "watch.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "_id": "product-of-mela-watch-002",
+    "name": "I Watch series 8",
+    "company": "apple",
+    "colors": ["#3A3B40", "#E2D8CF", "#FA9878"],
+    "price": "399",
+    "category": "Watch",
+    "description": " 45mm or 41mm case size 50m water resistantfootnote⁵ Swimprooffootnote⁵ Certified IP6X dust resistant Always-On Retina display Up to 1000 nits brightness Blood Oxygen app ECG app High and low heart rate notifications Irregular rhythm notificationfootnote⁸ Cardio fitness notifications Temperature sensing ",
+    "featured": "true",
+    "shipping": "true",
+    "stock": 5,
+    "reviews": 30,
+    "star": 2.8,
+    "image": [
+      {
+        "id": "i-watch-1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://unsplash.com/photos/4RmyqApaLjw",
+        "size": 1080,
+        "filename": "watch.png",
+        "type": "image/png"
+      },
+      {
+        "id": "i-watch-1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://unsplash.com/photos/bFzhdm9zZp0",
+        "size": 1080,
+        "filename": "watch.png",
+        "type": "image/png"
+      },
+      {
+        "id": "i-watch-1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://unsplash.com/photos/LRfh0_ldDA4",
+        "size": 1080,
+        "filename": "watch.png",
+        "type": "image/png"
+      },
+      {
+        "id": "i-watch-1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://unsplash.com/photos/IhuGwJIMgws",
+        "size": 1080,
+        "filename": "watch.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "_id": "product-of-mela-watch-003",
+    "name": "I Watch series 8",
+    "company": "apple",
+    "colors": ["#3A3B40", "#E2D8CF", "#FA9878"],
+    "price": "399",
+    "category": "Watch",
+    "description": " 45mm or 41mm case size 50m water resistantfootnote⁵ Swimprooffootnote⁵ Certified IP6X dust resistant Always-On Retina display Up to 1000 nits brightness Blood Oxygen app ECG app High and low heart rate notifications Irregular rhythm notificationfootnote⁸ Cardio fitness notifications Temperature sensing ",
+    "featured": "true",
+    "shipping": "true",
+    "stock": 5,
+    "reviews": 30,
+    "star": 2.8,
+    "image": [
+      {
+        "id": "i-watch-1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://unsplash.com/photos/4RmyqApaLjw",
+        "size": 1080,
+        "filename": "watch.png",
+        "type": "image/png"
+      },
+      {
+        "id": "i-watch-1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://unsplash.com/photos/bFzhdm9zZp0",
+        "size": 1080,
+        "filename": "watch.png",
+        "type": "image/png"
+      },
+      {
+        "id": "i-watch-1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://unsplash.com/photos/LRfh0_ldDA4",
+        "size": 1080,
+        "filename": "watch.png",
+        "type": "image/png"
+      },
+      {
+        "id": "i-watch-1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://unsplash.com/photos/IhuGwJIMgws",
+        "size": 1080,
+        "filename": "watch.png",
+        "type": "image/png"
+      }
+    ]
+  }
+]

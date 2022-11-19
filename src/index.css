@@ -196,3 +196,23 @@
     width: 45%;
   }
 }
+
+/* featured section design start */
+.featured-section {
+  margin-top: 20px;
+  background-color: #f0f4f8;
+}
+.welcome-title {
+  font-size: 0.8rem;
+  color: #6366f1;
+  padding-top: 10px;
+}
+.featured-title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.width {
+  max-width: 1280px;
+  margin: 0 auto;
+}
