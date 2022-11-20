@@ -9,6 +9,7 @@ const Reducer = (state, action) => {
       const featuredData = action.payload.filter((currElm) => {
         return currElm.featured === true;
       });
+
       return {
         ...state,
         isLoading: false,

@@ -5,7 +5,7 @@ import Reducer from "../Reducers/Reducer";
 //💔💔💔 CREATE A INSTANCE OF USE-CONTEXT API 💔💔💔
 const MainContext = createContext();
 
-const API = `../../public/products.json`;
+const API = "https://api.pujakaitem.com/api/products";
 
 const initialState = {
   isLoading: false,
@@ -34,7 +34,9 @@ const AppContext = ({ children }) => {
   useEffect(() => {
     getProducts(API);
   }, []);
-  return <MainContext.Provider value={state}>{children}</MainContext.Provider>;
+  return (
+    <MainContext.Provider value={{ ...state }}>{children}</MainContext.Provider>
+  );
 };
 
 //💔💔💔 FINALLY CREATE ANOTHER FUNCTION FOR CLINE CODE 💔💔💔
@@ -42,4 +44,4 @@ const ProductsContext = () => {
   return useContext(MainContext);
 };
 
-export { AppContext, ProductsContext, MainContext };
+export { AppContext, ProductsContext };
