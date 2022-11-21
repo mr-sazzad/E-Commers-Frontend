@@ -249,24 +249,23 @@
   width: 0%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-
   transition: all 0.5s linear;
 }
-/* .image-div:hover:after {
+.image-div:hover::after {
   width: 100%;
-  filter: blur(20px);
-  -webkit-filter: blur(20px);
-} */
+  /* filter: blur(20px);
+  -webkit-filter: blur(20px); */
+}
 .image {
   width: 95%;
   height: 95%;
   padding: 10px;
   transition: all 0.2s linear;
 }
-.image:hover {
+.image-div:hover .image {
   transform: scale(1.2);
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
 }
 .caption {
   position: absolute;
@@ -276,7 +275,7 @@
   top: 15%;
   right: 10%;
   color: black;
-  transition: all 1s linear;
+  transition: all 0.5s linear;
 }
 .content-div {
   display: flex;
@@ -286,13 +285,13 @@
   background-color: #fff;
   margin-bottom: 1rem;
 }
-.caption:hover {
+.image-div:hover .caption {
   color: white;
   background-color: black;
 }
 .product-identity {
-  list-style: none;
+  text-decoration: none;
   text-transform: uppercase;
   color: black;
 }
-/* featured section design end */
+/* single product part design started */

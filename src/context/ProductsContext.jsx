@@ -2,7 +2,6 @@ import axios from "axios";
 import { createContext, useContext, useEffect, useReducer } from "react";
 import Reducer from "../Reducers/Reducer";
 
-//💔💔💔 CREATE A INSTANCE OF USE-CONTEXT API 💔💔💔
 const MainContext = createContext();
 
 const API = "https://api.pujakaitem.com/api/products";
@@ -12,14 +11,15 @@ const initialState = {
   isError: false,
   products: [],
   featuredProducts: [],
+  isSingleProductLoading: false,
+  singleProduct: {},
+  singleError: false,
 };
 
-//💔💔💔 WRAPPING APP COMPONENT BY MAIN-CONTEXT 💔💔💔
 const AppContext = ({ children }) => {
-  // 🚀 INITIALIZING REDUCER OR REACT REDUCER
   const [state, dispatch] = useReducer(Reducer, initialState);
 
-  // 🚀 GET ALL PRODUCTS USING AXIOS API
+  // get all products
   const getProducts = async (url) => {
     dispatch("SET_LOADING");
     try {
@@ -31,15 +31,28 @@ const AppContext = ({ children }) => {
     }
   };
 
+  // get single product
+  const getSingleProduct = async (url) => {
+    dispatch("SET_SINGLE_PRODUCT_LOADING");
+    try {
+      const res = await axios.get(url);
+      const singleProduct = await res.data;
+      dispatch({ type: "SET_SINGLE_PRODUCT", payload: singleProduct });
+    } catch (error) {
+      dispatch("SET_SINGLE_ERROR");
+    }
+  };
+
   useEffect(() => {
     getProducts(API);
   }, []);
   return (
-    <MainContext.Provider value={{ ...state }}>{children}</MainContext.Provider>
+    <MainContext.Provider value={{ ...state, getSingleProduct }}>
+      {children}
+    </MainContext.Provider>
   );
 };
 
-//💔💔💔 FINALLY CREATE ANOTHER FUNCTION FOR CLINE CODE 💔💔💔
 const ProductsContext = () => {
   return useContext(MainContext);
 };
